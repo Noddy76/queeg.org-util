@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.queeg.util</groupId>
+  <artifactId>parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Queeg.org Utility Classes</name>
+
+  <scm>
+    <connection>scm:git:git@github.com:Noddy76/queeg.org-util.git</connection>
+    <url>scm:git:git@github.com:Noddy76/queeg.org-util.git</url>
+    <developerConnection>scm:git:git@github.com:Noddy76/queeg.org-util.git</developerConnection>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>queeg.org</id>
+      <name>Queeg.org</name>
+      <url>scp://holly.queeg.org/home/noddy/www/queeg.org/maven2</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>queeg.org</id>
+      <name>Queeg.org</name>
+      <url>scp://holly.queeg.org/home/noddy/www/queeg.org/maven2</url>
+      <layout>default</layout>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+          <encoding>UTF-8</encoding>
+          <showWarnings>true</showWarnings>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <configuration>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <modules>
+    <module>io-ssh</module>
+  </modules>
+</project>

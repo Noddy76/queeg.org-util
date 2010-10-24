@@ -55,5 +55,6 @@
   <modules>
     <module>io-ssh</module>
     <module>util-spring</module>
+    <module>queeg-util-collections</module>
   </modules>
 </project>

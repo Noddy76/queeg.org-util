@@ -3,12 +3,12 @@
 >
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>parent</artifactId>
+    <artifactId>queeg-util-parent</artifactId>
     <groupId>org.queeg.util</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>org.queeg.util</groupId>
-  <artifactId>util-spring</artifactId>
+  <artifactId>queeg-util-spring</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Queeg.org Utility Classes for Spring</name>
 

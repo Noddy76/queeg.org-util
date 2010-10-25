@@ -3,7 +3,7 @@
 >
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.queeg.util</groupId>
-  <artifactId>parent</artifactId>
+  <artifactId>queeg-util-parent</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Queeg.org Utility Classes</name>
@@ -53,8 +53,8 @@
   </build>
 
   <modules>
-    <module>io-ssh</module>
-    <module>util-spring</module>
+    <module>queeg-util-io-ssh</module>
+    <module>queeg-util-spring</module>
     <module>queeg-util-collections</module>
   </modules>
 </project>

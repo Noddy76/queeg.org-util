@@ -30,23 +30,27 @@ public class IntList {
     int rowOffset = size % rowLength;
 
     log.debug("row={}, offset={}", row, rowOffset);
-    
+
     if (row >= data.size()) {
       data.add(new int[rowLength]);
     }
-    
+
     int[] rowArray = data.get(row);
     rowArray[rowOffset] = value;
-    
+
     return size++;
   }
-  
+
   public int get(int index) {
-    int row = size / rowLength;
-    int rowOffset = size % rowLength;
+    if (index >= size) {
+      throw new IndexOutOfBoundsException();
+    }
+
+    int row = index / rowLength;
+    int rowOffset = index % rowLength;
 
     log.debug("row={}, offset={}", row, rowOffset);
-    
+
     int[] rowArray = data.get(row);
 
     return rowArray[rowOffset];
